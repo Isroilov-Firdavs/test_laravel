@@ -1,4 +1,8 @@
 <x-layouts.app>
+<?php foreach($data as $d):?>
+    <p><?=$d['title']?></p>
+<?php endforeach;?>
+
 <!-- Carousel Start -->
 <div class="container-fluid p-0">
     <div id="header-carousel" class="carousel slide carousel-fade" data-ride="carousel">
