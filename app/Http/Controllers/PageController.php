@@ -3,12 +3,14 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use App\Models\Posters;
 
 class PageController extends Controller
 {
     public function main()
     { 
-        return view('main');
+        $model = Posters::all();
+        return view('main', ['data' => $model]);
     }
 
     public function about()
